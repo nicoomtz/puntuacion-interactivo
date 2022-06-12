@@ -4,10 +4,6 @@ import Boton from "../componentes/Boton";
 import "../styles/Pregunta.css";
 
 function Pregunta() {
-  function controlarClic() {
-    this.clickeado = true;
-  }
-
   return (
     <div className="pregunta-container container">
       <img className="pregunta-estrella btn" src={Star} alt="Estrella" />
@@ -17,11 +13,11 @@ function Pregunta() {
         appreciated to help us improve our offering!
       </p>
       <div className="pregunta-botones">
-        <Boton id={1} clickeado={false} manejarClic={controlarClic} />
-        <Boton id={2} clickeado={false} manejarClic={controlarClic} />
-        <Boton id={3} clickeado={false} manejarClic={controlarClic} />
-        <Boton id={4} clickeado={false} manejarClic={controlarClic} />
-        <Boton id={5} clickeado={false} manejarClic={controlarClic} />
+        <Boton id={1} />
+        <Boton id={2} />
+        <Boton id={3} />
+        <Boton id={4} />
+        <Boton id={5} />
       </div>
       <button className="pregunta-submit">SUBMIT</button>
     </div>

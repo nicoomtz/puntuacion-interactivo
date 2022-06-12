@@ -1,14 +1,9 @@
 import React from "react";
 import "../styles/Boton.css";
 
-function Boton({ id, clickeado, manejarClic }) {
+function Boton({ id }) {
   return (
-    <button
-      className={clickeado ? "pregunta-btn btn clickeado" : "pregunta-btn btn"}
-      id={id}
-      clickeado={clickeado}
-      manejarClic={manejarClic}
-    >
+    <button className={"pregunta-btn btn"} id={id}>
       {id}
     </button>
   );
