@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #141519;
+  font-family: 'Overpass', sans-serif;
+  
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+}
+
+button {
+  font-family: 'Overpass', sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.container {
+  background-color: #202731;
+  width: 420px;
+  max-width: 500px;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 30px;
+  padding: 30px;
+}

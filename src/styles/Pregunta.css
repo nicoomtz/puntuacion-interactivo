@@ -1,0 +1,66 @@
+.btn {
+  background-color: #272E38;
+  border-radius: 50%;
+}
+
+
+
+.container {
+  background-color: #202731;
+  width: 420px;
+  max-width: 500px;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.pregunta-estrella {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 25px 0px;
+  padding: 0.8em;
+}
+
+.pregunta-titulo {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.pregunta-botones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pregunta-submit {
+  font-size: 16px;
+  width: 100%;
+  height: 45px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  border: none;
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pregunta-submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.clickeado {
+  background-color: hsl(217, 12%, 63%);
+  color: white
+}
