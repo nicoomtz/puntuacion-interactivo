@@ -1,10 +1,11 @@
 import React from "react";
 import Imagen from "../imagenes/illustration-thank-you.svg";
+import Pregunta from "../componentes/Pregunta";
 import "../styles/Enviado.css";
 
 function Enviado({ valor }) {
   return (
-    <div className="enviado-container container">
+    <div className="enviado-container container hidden">
       <img className="enviado-imagen" src={Imagen} alt="Gracias" />
       <div className="enviado-seleccion">You selected {valor} out of 5</div>
       <h1 className="enviado-gracias">Thank you!</h1>

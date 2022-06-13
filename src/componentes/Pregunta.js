@@ -3,16 +3,25 @@ import Star from "../imagenes/icon-star.svg";
 import Boton from "../componentes/Boton";
 import "../styles/Pregunta.css";
 
-function Pregunta() {
-  const [valor, setValor] = useState(0);
+function Pregunta({ setValor }) {
 
   function controlarEstado(e) {
     setValor(e.target.id);
-    console.log(valor);
+    console.log(e.target.id);
+  }
+
+  function checkearClase() {
+    if (document.querySelector('.hidden')){
+      
+      console.log('si')
+      document.querySelector('.hidden').classList.remove('hidden')
+      document.querySelector('.ver').classList.add('hidden')
+      document.querySelector('.ver').classList.remove('ver')
+    }
   }
 
   return (
-    <div className="pregunta-container container">
+    <div className="pregunta-container container ver">
       <img className="pregunta-estrella btn" src={Star} alt="Estrella" />
       <h1 className="pregunta-titulo">How did we do?</h1>
       <p className="pregunta-texto">
@@ -24,34 +33,33 @@ function Pregunta() {
           id={1}
           onClick={() => controlarEstado()}
           controlarEstado={controlarEstado}
-          valor={valor}
+          
         />
         <Boton
           id={2}
           onClick={() => controlarEstado()}
           controlarEstado={controlarEstado}
-          valor={valor}
+          
         />
         <Boton
           id={3}
           onClick={() => controlarEstado()}
           controlarEstado={controlarEstado}
-          valor={valor}
         />
         <Boton
           id={4}
           onClick={() => controlarEstado()}
           controlarEstado={controlarEstado}
-          valor={valor}
+          
         />
         <Boton
           id={5}
           onClick={() => controlarEstado()}
           controlarEstado={controlarEstado}
-          valor={valor}
+          
         />
       </div>
-      <button className="pregunta-submit">SUBMIT</button>
+      <button className="pregunta-submit" onClick={() => checkearClase()}>SUBMIT</button>
     </div>
   );
 }

@@ -4,7 +4,6 @@
 }
 
 
-
 .container {
   background-color: #202731;
   width: 420px;
@@ -16,6 +15,7 @@
   border-radius: 30px;
   padding: 30px;
 }
+
 
 .pregunta-estrella {
   width: 45px;
@@ -59,3 +59,13 @@
   color: hsl(25, 97%, 53%);
   background-color: white;
 }
+
+.ver {
+  display: flex;
+}
+
+
+.hidden{
+  display: none;
+}
+
