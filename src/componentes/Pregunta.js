@@ -7,13 +7,11 @@ function Pregunta({ setValor }) {
 
   function controlarEstado(e) {
     setValor(e.target.id);
-    console.log(e.target.id);
   }
 
   function checkearClase() {
     if (document.querySelector('.hidden')){
       
-      console.log('si')
       document.querySelector('.hidden').classList.remove('hidden')
       document.querySelector('.ver').classList.add('hidden')
       document.querySelector('.ver').classList.remove('ver')
